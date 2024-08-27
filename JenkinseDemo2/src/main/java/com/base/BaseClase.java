@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClase {
 	WebDriver driver;	
+	
 	@BeforeMethod
 	public void launch() {
 		
@@ -21,8 +22,9 @@ public class BaseClase {
 		WebDriverManager.edgedriver().setup();
 		driver= new EdgeDriver();
 	}
-	driver.manage().window().maximize();
 	driver.get("https://www.google.co.in/");
+	driver.manage().window().maximize();
+
 	
 	}
   @AfterMethod
