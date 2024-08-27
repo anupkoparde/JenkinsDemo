@@ -22,6 +22,8 @@ public class BaseClase {
 		WebDriverManager.edgedriver().setup();
 		driver= new EdgeDriver();
 	}
+	driver.manage().window().maximize();
+	driver.get(System.getProperty("url"));
 	driver.get("https://www.google.co.in/");
 	driver.manage().window().maximize();
 
