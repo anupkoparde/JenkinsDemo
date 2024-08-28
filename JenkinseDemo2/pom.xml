@@ -75,7 +75,7 @@
 					</suiteXmlFiles>
 					
 					<systemPropertyVariables>
-					<browser>${browser}</browser>
+					<exectionbrowser>${browser}</exectionbrowser>
 					<appURL>${url}</appURL>
 					</systemPropertyVariables>
 					
